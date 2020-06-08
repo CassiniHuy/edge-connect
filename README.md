@@ -1,5 +1,6 @@
 ## EdgeConnect: Generative Image Inpainting with Adversarial Edge Learning
 [ArXiv](https://arxiv.org/abs/1901.00212) | [BibTex](#citation)
+
 ### Introduction:
 We develop a new approach for image inpainting that does a better job of reproducing filled regions exhibiting fine details inspired by our understanding of how artists work: *lines first, color next*. We propose a two-stage adversarial model EdgeConnect that comprises of an edge generator followed by an image completion network. The edge generator hallucinates edges of the missing region (both regular and irregular) of the image, and the image completion network fills in the missing regions using hallucinated edges as a priori. Detailed description of the system can be found in our [paper](https://arxiv.org/abs/1901.00212).
 <p align='center'>  
@@ -108,6 +109,14 @@ By default, we use Canny edge detector to extract edge information from the inpu
 ### Model Configuration
 
 The model configuration is stored in a [`config.yaml`](config.yml.example) file under your checkpoints directory. The following tables provide the documentation for all the options available in the configuration file:
+
+
+### Chinese character mending
+This repo is slightly modified for stained Chinese character image mending task.
+You can get more information from [Chinese_Mending](https://github.com/CassiniHuy/Chinese_Mending.git).
+The inpainting model can achieve the 2nd step in the task.
+
+Get pretained model from [Checkpoints](https://drive.google.com/file/d/18fDGVmdnQeqO2n8xI3hn2yc5H1621PAW/view?usp=sharing)
 
 #### General Model Configurations
 

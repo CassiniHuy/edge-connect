@@ -1,2 +1,3 @@
-from main import main
-main(mode=1)
+if __name__ == '__main__':
+    from main import main
+    main(mode=1)
